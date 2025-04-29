@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <section>
+    <section id="home">
       <nav>
         <img src="./assets/FES.svg" class="logo" alt="Logo" />
         <ul>
@@ -24,13 +24,13 @@
       </nav>
       <header>
         <div class="row">
-            <div>
+            <div class="home__description">
                 <h1>Best place to learn Frontend</h1>
                 <p class="subheader">
                     Go from being an absolute beginner to being a pro with a simplified
                     process
                 </p>
-                <button>Start Now</button>
+                <button class=".home__description--button">Start Now</button>
             </div>
             <figure class="computer">
                 <img src="./assets/laptop.png" alt="Homepage image" />
@@ -69,9 +69,11 @@
         <h2>Discord</h2>
         <div class="row">
           <div class="section__description">
-            <figure class="discord-img">
-              <img src="./assets/discord.png" alt="Discord image" />
-            </figure>
+            <a class="discord__img--wrapper" href="https://discord.com/invite/E5ESdHCjQD" target="_blank">
+              <figure class="discord__img">
+                <img src="./assets/discord.png" alt="Discord image" />
+              </figure>
+            </a>
             <div class="section__description--wrapper">
               <p class="section__description--para">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
@@ -105,6 +107,7 @@
     <footer id="footer">
         <img class="footer__logo" src="./assets/FES.svg" alt="Footer logo">
         <div class="footer__links">
+            <a class="footer__link" href="#home">Home</a>
             <a class="footer__link" href="#about">About</a>
             <a class="footer__link" href="#discord">Discord</a>
             <a class="footer__link" href="#contact">Contact</a>
